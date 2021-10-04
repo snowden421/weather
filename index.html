@@ -22,6 +22,28 @@
         </div>
     </nav>
     <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <h4>Search for a City:</h4>
+                    <!-- city search box-->
+                    <form id="city-search">
+                        <div><input type="text" id="searchTerm"> </div>
+                        <!-- <div><input type="submit" id="search-bttn"> Search </div> -->  
+                        <div>
+                            <button id="response-container" onclick="myFunction()">Search</button>
+                        </div>
+                    </form>
+                    
+                    <br></br>
+                    
+                    <!-- display searched city names in localStorage -->
+                    <ul class="nav flex-colum" id="search">
+                    </ul> 
+                    
+                </div>
+            </div>
+        </div>
         <div class="col-sm-3">
             <div class="row" id="search-bar">
                 <h3>Search Bar:</h3>
