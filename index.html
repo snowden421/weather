@@ -42,19 +42,66 @@
                     </ul> 
                     
                 </div>
+                <div>
+                    <!-- Bootstrap layout for current weather and 5-day forecast as two rows in the same column --> 
+                    <div class="container">
+                        <div class="col-9 current-weather">
+                            <!-- Bootstrap layout for current weather as the first row in the column --> 
+                            <div><h4 id="city-name"></h4> </div>
+                            <div id="temp"></div>
+                            <div id="speed"></div>
+                            <div id="humidity"></div>
+                            <div id="index"></div> 
+                            </div>    
+                                <!-- Bootstrap layout for 5-day forecast as the second row in the same column --> 
+                                <div class="container-fluid">
+                                    <h4>5-Day Forecast:</h4>
+    
+                                    <div class="card text-white bg-dark mb-3" style="max-width: 9rem;">
+                                        <div id="dayOne" class="futureDate"> </div>
+                                        <div id="dayOneIcon"> </div>
+                                        <div id="dayOneTemp"></div>
+                                        <div id="dayOneSpeed"></div>
+                                        <div id="dayOneHumidity"></div>
+                                    </div>
+    
+                                    <div class="card text-white bg-dark mb-3" style="max-width: 9rem;">
+                                        <div id="dayTwo" class="futureDate"> </div>
+                                        <div id="dayTwoIcon"> </div>
+                                        <div id="dayTwoTemp"></div>
+                                        <div id="dayTwoSpeed"></div>
+                                        <div id="dayTwoHumidity"></div>
+                                    </div>
+    
+                                    <div class="card text-white bg-dark mb-3" style="max-width: 9rem;">
+                                        <div id="dayThree" class="futureDate"> </div>
+                                        <div id="dayThreeIcon"> </div>
+                                        <div id="dayThreeTemp"></div>
+                                        <div id="dayThreeSpeed"></div>
+                                        <div id="dayThreeHumidity"></div>
+                                    </div>
+    
+                                    <div class="card text-white bg-dark mb-3" style="max-width: 9rem;">
+                                        <div id="dayFour" class="futureDate"> </div>
+                                        <div id="dayFourIcon"> </div>
+                                        <div id="dayFourTemp"></div>
+                                        <div id="dayFourSpeed"></div>
+                                        <div id="dayFourHumidity"></div>
+                                    </div>
+    
+                                    <div class="card text-white bg-dark mb-3" style="max-width: 9rem;">
+                                        <div id="dayFive" class="futureDate"> </div>
+                                        <div id="dayFiveIcon"> </div>
+                                        <div id="dayFiveTemp"></div>
+                                        <div id="dayFiveSpeed"></div>
+                                        <div id="dayFiveHumidity"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="row" id="search-bar">
-                <h3>Search Bar:</h3>
-                <input name="city-name" id="city-input" />
-                <button type="button" id="search-button">Search</button>
-            </div>
-            <div class="row" id="recently-searched"></div>
-        </div>
-        <div class="col-sm-9">
-            <div class="row" id="searched-area"></div>
-            <div class="row" id="5-day-forecast"></div>
         </div>
     </main>
     <script src="assets/js/script.js"></script>
